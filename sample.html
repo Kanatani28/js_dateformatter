@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script type="text/javascript" src="src/date_format.js"></script>
+    <script type="text/javascript">
+    function showDate() {
+        var format = document.getElementById("format").value;
+        var date = new Date();
+        var out = document.getElementById("out");
+        out.innerText = date.getFormattedDate(format);
+    }
+    </script>
+</head>
+<body>
+    <div>
+    Input date format .
+    </div>
+    <input type="text" id="format" placeholder="yyyy-MM-dd HH:mm:ss" /> 
+    <button onclick="showDate()">click</button>
+    <div id="out" style="height: 24px;"></div>
+    if now is 2019/5/1 9:01:01 Wed 
+    <table border="1">
+        <tr>
+            <th>Symbol</th>
+            <th>Meaning</th>
+            <th>Example</th>
+        </tr>
+        <tr>
+            <td>yyyy</td>
+            <td>Year</td>
+            <td>2019</td>
+        </tr>
+        <tr>
+            <td>yy</td>
+            <td>Year</td>
+            <td>19</td>
+        </tr>
+        <tr>
+            <td>MM</td>
+            <td>Month</td>
+            <td>05</td>
+        </tr>
+        <tr>
+            <td>M</td>
+            <td>Month</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td>dd</td>
+            <td>Date</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td>d</td>
+            <td>Date</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>HH</td>
+            <td>Hours</td>
+            <td>09</td>
+        </tr>
+        <tr>
+            <td>H</td>
+            <td>Hours</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td>mm</td>
+            <td>Minutes</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td>m</td>
+            <td>Minutes</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>ss</td>
+            <td>Seconds</td>
+            <td>01</td>
+        </tr>
+        <tr>
+            <td>s</td>
+            <td>Seconds</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td>JPE</td>
+            <td>Day of week in Japanese</td>
+            <td>水</td>
+        </tr>
+        <tr>
+            <td>E</td>
+            <td>Day of week in English</td>
+            <td>Wednesday</td>
+        </tr>
+        <tr>
+            <td>e</td>
+            <td>Day of week in English</td>
+            <td>Wed</td>
+        </tr>
+    </table>
+        
+</body>
+</html>
