@@ -21,17 +21,19 @@ Date.prototype.getFormattedDate = function(formatString) {
     return formatString;
 }
 
+Date.prototype.DAY_OF_WEEK_STR_LIST = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+Date.prototype.DAY_OF_WEEK_STR_SHORT_LIST = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
+Date.prototype.DAY_OF_WEEK_STR_JP_LIST = ["日", "月", "火", "水", "木", "金", "土"];
+
+
 Date.prototype.getDayOfWeekStr = function() {
-    const DAY_OF_WEEK_STR = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    return DAY_OF_WEEK_STR[this.getDay()];
+    return this.DAY_OF_WEEK_STR_LIST[this.getDay()];
 }
 
 Date.prototype.getDayOfWeekShortStr = function() {
-    const DAY_OF_WEEK_STR = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
-    return DAY_OF_WEEK_STR[this.getDay()];
+    return this.DAY_OF_WEEK_STR_SHORT_LIST[this.getDay()];
 }
 
 Date.prototype.getDayOfWeekStrJP = function() {
-    const DAY_OF_WEEK_STR = ["日", "月", "火", "水", "木", "金", "土"];
-    return DAY_OF_WEEK_STR[this.getDay()];
+    return this.DAY_OF_WEEK_STR_JP_LIST[this.getDay()];
 }
