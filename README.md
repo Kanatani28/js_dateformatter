@@ -1,4 +1,4 @@
-# date_formatt.js
+# date_format.js
 
 ## Overview
 Convert date object to formatted string easily .
